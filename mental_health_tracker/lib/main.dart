@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health_tracker/menu.dart';
+import 'package:mental_health_tracker/menu.dart'; // Import menu.dart or your other necessary files
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
         // the application has a purple toolbar. Then, without quitting the app,
         // try changing the seedColor in the colorScheme below to Colors.green
         // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
+        // reload" button in a Flutter-supported IDE, or press "r" if you used the
+        // command line to start the app).
         //
         // Notice that the counter didn't reset back to zero; the application
         // state is not lost during the reload. To reset the state, use hot
@@ -29,10 +29,12 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple,).copyWith(secondary: Colors.deepPurple[400]),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
+            .copyWith(secondary: Colors.deepPurple[400]),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      // Replace with the actual home widget
+      home: MyHomePage(), // Home widget, could be the entry page
     );
   }
 }
